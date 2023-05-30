@@ -1,0 +1,166 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-color: rgb(255, 234, 0);
+}
+.container
+{
+    display: flex;
+    margin-left: 30%;
+}
+.container1
+{
+    height: 100px;
+    width: 150px;
+    margin: 30px;
+    background-color: blue;
+    border: solid 1px black;
+    transform: skewX(-30deg);
+    /* transition-duration: 3s; */
+    animation: raju 5s infinite;
+    animation-direction: alternate;
+}
+@keyframes raju {
+    0%{
+        transform: skewX(30deg);
+    }
+}
+.container11
+{
+    margin-top: 120px;
+    margin-right: 20px;
+}
+.containera
+{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+.container2
+{
+    height: 100px;
+    width: 130px;
+    margin: 30px;
+    background-color: blueviolet;
+    border: solid 1px black;
+    transform: rotate(-30deg);
+    animation: nimki 5s infinite;
+    animation-direction: alternate;
+}
+@keyframes nimki {
+    0%{
+        transform: rotate(30deg);
+    }
+}
+.containerb
+{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+.container3
+{
+    height: 100px;
+    width: 130px;
+    margin: 30px;
+    background-color: blueviolet;
+    border: solid 1px black;
+    /* transform: rotate(0deg); */
+    animation: squar 3s infinite;
+    animation-direction: reverse;
+}
+@keyframes squar {
+    0%{
+        transform: rotate(360deg);
+    }
+}
+.containerc
+{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+.container31
+{
+    margin-top: 80px;
+    margin-right: 20px;
+}
+.container32
+{
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    transition: all 2s;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.container32:hover{
+    transform: scale(1.2,2.1);
+}
+.container33
+{
+    height: 100px;
+    width: 50px;
+    background-color: blue;
+    transition: all 2s;
+    margin-left: 70px;
+}
+.container33:hover{
+    transform: scale(2.1,1.2);
+}
+.container34
+{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: all 2s;
+    margin-left: 70px;
+}
+.container34:hover{
+    transform: rotate(360deg);
+}
+h1{
+    text-align: center;
+}
+.mails{
+    display: flex;
+    flex-wrap: wrap;
+    border: 0px solid gray;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.mail{
+    background-color: rgb(13, 252, 13);
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+}
+.mail1:hover{
+    width: 300px;
+}
+.mail2:hover{
+    width: 300px;
+    height: 300px;
+}
+.mail3:hover{
+    width: 300px;
+}
+.mail4:hover{
+    width: 300px;
+}
+.mail5:hover{
+    width: 300px;
+}
+.mail6:hover{
+    width: 300px;
+}
+.mail7:hover{
+    width: 300px;
+}

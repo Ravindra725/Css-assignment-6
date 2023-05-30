@@ -1,0 +1,171 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    border-top: 10px solid white;
+    border-left: 10px solid orange;
+    border-right: 10px solid green;
+}
+.don
+{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./sky.jpg);
+    position: relative;
+    z-index: -2;
+}
+.happy
+{
+    text-align: center;
+}
+.a
+{
+    background-color: orange;
+}
+.b{
+    background-color: white;
+}
+.c
+{
+    background-color: green;
+}
+.a,.b,.c {
+    font-size: 40px;
+    margin-left: 5px;
+}
+.sun1
+{
+    margin-left: 85vw;
+    position: relative;
+    animation: sun-image 110s linear infinite;
+}
+@keyframes sun-image 
+{
+    100%
+    {
+        transform: translateX(-1000px);
+    }
+}
+.city-image
+{
+    background-image: url(./city.png);
+    height: 250px;
+    width: 500%;
+    background-repeat: repeat-x;
+    position: relative;
+    top: 55px;
+    /* animation-name: city;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    overflow-x: hidden;
+    /* animation-fill-mode: none; */
+    /* animation-timing-function: linear; */
+    animation: city 13s linear infinite;
+    
+}
+@keyframes city {
+    /* 0%
+    {
+        transform: translateX(0px);
+    } */
+    100%
+    {
+        transform: translateX(-1000px);
+    }
+}
+.road-image
+{
+    background-image: url(./road.jpg);
+    background-repeat: repeat-x;
+    height: 250px;
+    width: 500%;
+    position: relative;
+    margin-top: 55px;
+    animation: road 2s linear infinite;
+    /* z-index: -1; */
+}
+@keyframes road {
+    100%
+    {
+        transform: translateX(-1000px);
+    }
+}
+/* .car-image
+{
+    position: absolute;
+    top: 430px;
+    left: 35%;
+}
+.wheel-image
+{
+    position: absolute;
+    top: 530px;
+    left: 557px;
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+    from{
+        transform: rotateZ(-360deg);
+    }
+}
+.wheel-image1
+{
+    position: absolute;
+    top: 530px;
+    left: 835px;
+    animation: wheela 1s linear infinite;
+}
+@keyframes wheela {
+    from{
+        transform: rotateZ(-360deg);
+    }
+} */
+.highway
+{
+    position: absolute;
+    top: 400px;
+}
+.flag
+{
+    width: 100px;
+    position: absolute;
+    top: -10px;
+    left: 85%;
+}
+.car
+{
+    width: 440px;
+    margin-left: 450px;
+}
+.wheel
+{
+    width: 75px;
+    position: absolute;
+    top: 100px; 
+    left: 55%;
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel 
+{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.wheela
+{
+    width: 75px;
+    position: absolute;
+    top: 100px;
+    left: 85.5%;
+    animation: wheela 1s linear infinite;
+}
+@keyframes wheela 
+{
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
